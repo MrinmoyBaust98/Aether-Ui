@@ -92,6 +92,12 @@ h1 {
 
 .footer {
   margin-left: 130px;
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
 }
 
 #download-title {
@@ -100,4 +106,15 @@ h1 {
   font-weight: 700;
   font-size: 18px;
   margin-top: 72px;
+}
+
+#play {
+  width: 158px;
+  height: 46.81px;
+  margin-left: 8px;
+}
+
+#apple {
+  width: 161px;
+  height: 47.65px;
 }
