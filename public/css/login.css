@@ -97,6 +97,24 @@ form fieldset:nth-child(1) label,
 form fieldset:nth-child(2) label {
     cursor: text;
 }
+div.input-small-device{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--pale-pink);
+}
+div.input-small-device > input{
+    border: none !important;
+    flex: 0.9;
+}
+div.input-small-device > span{
+    flex: 0.1;
+    font-size: 0.75rem;
+    color: var(--pale-pink);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 
 form fieldset:nth-child(3) {
     border: none;
@@ -110,6 +128,9 @@ a.forgot {
     font-size: 0.9rem;
     text-decoration: none;
     color: var(--light-gray);
+}
+label.custom-color{
+    color: var(--pale-pink);
 }
 
 form fieldset:nth-child(4) {
@@ -143,16 +164,6 @@ main section.image img {
 }
 
 /* making the web responsive */
-@media only screen and (max-width: 768px) {
-
-    #nav {
-        width: 100%;
-        padding: auto auto;
-        margin-left: 4px;
-        margin-top: 32px;
-    }
-}
-
 @media screen and (max-width: 600px) {
     main {
         flex-direction: column-reverse;
@@ -169,6 +180,15 @@ main section.image img {
 
     main section.image img {
         max-width: 60%;
+    }
+    form fieldset:nth-child(1),
+    form fieldset:nth-child(2) {
+        border: none;
+    }
+    form fieldset:nth-child(1) input,
+    form fieldset:nth-child(2) input{
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--pale-pink);
     }
 }
 
