@@ -16,51 +16,34 @@ body {
     padding: 0.25rem;
 }
 
-nav {
-    padding: 0.25rem 1rem;
-    display: flex;
-    justify-content: space-between;
+#nav {
+    width: 94%;
+    padding: auto auto;
+    margin-left: 2%;
+    margin-top: 1.5%;
+    margin-right: 2%;
 }
 
-div.logo {
-    flex: 0.3;
+#btn-sign-in {
+    font-family: Montserrat, sans-serif;
+    color: #252c32;
+    border-color: #dde2e4;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #fdfdfd;
 }
-
-span.dot {
-    display: inline-block;
-    height: 6px;
-    width: 6px;
-    border-radius: 6px;
-    background: var(--pale-pink);
-}
-
-ul.nav-links-list {
-    flex: 0.3;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style-type: none;
-}
-
-li.nav-link-container {
-    margin-right: 0.5rem;
-}
-
-a.nav-link {
-    border-radius: 6px;
-    padding: 0.75rem 1rem;
-    white-space: nowrap;
-    text-decoration: none;
-}
-
-li.nav-link-container:first-child a {
+#btn-sign-in:hover{
     color: #fdfdfd;
-    background-color: var(--pale-pink);
-    border: 1px solid var(--pale-pink);
+    background-color: #f37172;
 }
 
-li.nav-link-container:last-child a {
-    border: 1px solid var(--pale-gray);
+#btn-sign-up {
+    background: #f37172;
+    border-color: rgb(243, 113, 114);
+    font-family: Montserrat, sans-serif;
+    color: #fdfdfd;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
 
 /* main */
@@ -114,24 +97,6 @@ form fieldset:nth-child(1) label,
 form fieldset:nth-child(2) label {
     cursor: text;
 }
-div.input-small-device{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid var(--pale-pink);
-}
-div.input-small-device > input{
-    border: none !important;
-    flex: 0.9;
-}
-div.input-small-device > span{
-    flex: 0.1;
-    font-size: 0.75rem;
-    color: var(--pale-pink);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
 
 form fieldset:nth-child(3) {
     border: none;
@@ -145,9 +110,6 @@ a.forgot {
     font-size: 0.9rem;
     text-decoration: none;
     color: var(--light-gray);
-}
-label.custom-color{
-    color: var(--pale-pink);
 }
 
 form fieldset:nth-child(4) {
@@ -181,6 +143,16 @@ main section.image img {
 }
 
 /* making the web responsive */
+@media only screen and (max-width: 768px) {
+
+    #nav {
+        width: 100%;
+        padding: auto auto;
+        margin-left: 4px;
+        margin-top: 32px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     main {
         flex-direction: column-reverse;
@@ -197,15 +169,6 @@ main section.image img {
 
     main section.image img {
         max-width: 60%;
-    }
-    form fieldset:nth-child(1),
-    form fieldset:nth-child(2) {
-        border: none;
-    }
-    form fieldset:nth-child(1) input,
-    form fieldset:nth-child(2) input{
-        padding: 0.75rem 1rem;
-        border: 1px solid var(--pale-pink);
     }
 }
 
