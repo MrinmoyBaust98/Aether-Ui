@@ -1,25 +1,55 @@
-#nav {
-  width: 94%;
-  padding: auto auto;
-  margin-left: 2%;
-  margin-top: 1.5%;
-  margin-right: 2%;
+:root {
+  --pale-pink: #f37172;
+  --pale-gray: #dde2e4;
+  --light-gray: rgba(0, 0, 0, 0.6);
 }
 
-#btn-sign-in {
-  font-family: Montserrat, sans-serif;
-  color: #252c32;
-  border-color: #dde2e4;
-  padding-top: 6px;
-  padding-bottom: 6px;
+nav {
+  padding: 0.25rem 1rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-#btn-sign-up {
-  background: #f37172;
-  border-color: rgb(243, 113, 114);
-  font-family: Montserrat, sans-serif;
-  padding-top: 6px;
-  padding-bottom: 6px;
+div.logo {
+  flex: 0.3;
+}
+
+span.dot {
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 6px;
+  background: var(--pale-pink);
+}
+
+ul.nav-links-list {
+  flex: 0.3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+
+li.nav-link-container {
+  margin-right: 0.5rem;
+}
+
+a.nav-link {
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+li.nav-link-container:last-child a {
+  color: #fdfdfd;
+  background-color: var(--pale-pink);
+  border: 1px solid var(--pale-pink);
+}
+
+li.nav-link-container:first-child a {
+  color: #010101;
+  border: 1px solid var(--pale-gray);
 }
 
 #main {
@@ -70,7 +100,7 @@
 
 .download-title h1 {
   font-size: 18px;
-  font-family:'Montserrat'
+  font-family: 'Montserrat'
 }
 
 
