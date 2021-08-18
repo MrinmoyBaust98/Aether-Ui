@@ -13,7 +13,7 @@
     <!-- w3-css CDN -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Local Stylesheet -->
-    <link rel="stylesheet" href="./public/css/login.css"> 
+    <link rel="stylesheet" href="./public/css/login.css">
     <link rel="stylesheet" href="./public/css/footer.css">
 </head>
 
@@ -43,12 +43,18 @@
             <br>
             <form action="">
                 <fieldset>
-                    <label for="user-email">Email Address</label>
+                    <label for="user-email" class="w3-hide-medium w3-hide-large custom-color">Email Address</label>
+                    <label for="user-email" class="w3-hide-small">Email Address</label>
                     <input type="email" name="mail" id="user-email">
                 </fieldset>
                 <fieldset>
-                    <label for="user-pass">Password</label>
-                    <input type="password" name="password" id="user-pass">
+                    <label for="user-pass" class="w3-hide-medium w3-hide-large custom-color">Password</label>
+                    <label for="user-pass" class="w3-hide-small">Password</label>
+                    <input class="w3-hide-small" type="password" name="password" id="user-pass">
+                    <div class="input-small-device w3-hide-medium w3-hide-large">
+                        <input type="password" name="password" id="sd-user-pass">
+                        <span class="eye"><i class="fas fa-eye-slash eye-toggle"></i></span>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <div class="w3-hide-small">
@@ -78,6 +84,8 @@
         </ul>
         <p class="copyright">aether © 2021</p>
     </footer>
+    <!-- scripts -->
+    <script src="./public/javascript/login.js"></script>
 </body>
 
 </html>
