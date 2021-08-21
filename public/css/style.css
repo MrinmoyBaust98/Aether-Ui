@@ -1,3 +1,9 @@
+:root {
+  --pale-pink: #f37172;
+  --pale-gray: #dde2e4;
+  --light-gray: rgba(0, 0, 0, 0.6);
+}
+
 #nav {
   width: 94%;
   padding: auto auto;
@@ -12,6 +18,7 @@
   border-color: #dde2e4;
   padding-top: 6px;
   padding-bottom: 6px;
+  background-color: #fdfdfd;
 }
 #btn-sign-in:hover{
   color: #fdfdfd;
@@ -22,9 +29,11 @@
   background: #f37172;
   border-color: rgb(243, 113, 114);
   font-family: Montserrat, sans-serif;
+  color: #fdfdfd;
   padding-top: 6px;
   padding-bottom: 6px;
 }
+
 
 #main {
   max-width: 92%;
@@ -74,7 +83,7 @@
 
 .download-title h1 {
   font-size: 18px;
-  font-family:'Montserrat'
+  font-family: 'Montserrat'
 }
 
 
