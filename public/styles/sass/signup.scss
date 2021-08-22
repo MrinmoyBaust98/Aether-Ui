@@ -1,0 +1,143 @@
+$pink: #f37172;
+$dark: rgba(0, 0, 0, 0.6);
+$pale-pink: rgba(251, 205, 208, 1);
+
+html {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+
+    body {
+        flex-grow: 1;
+
+        #nav {
+            width: 94%;
+            padding: auto auto;
+            margin-left: 2%;
+            margin-top: 1.5%;
+            margin-right: 2%;
+
+            #btn-sign-in {
+                font-family: Montserrat, sans-serif;
+                color: #252c32;
+                border-color: #dde2e4;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                background-color: #fdfdfd;
+            }
+
+            #btn-sign-in:hover {
+                color: #fdfdfd;
+                background-color: #f37172;
+            }
+
+            #btn-sign-up {
+                background: #f37172;
+                border-color: rgb(243, 113, 114);
+                font-family: Montserrat, sans-serif;
+                color: #fdfdfd;
+                padding-top: 6px;
+                padding-bottom: 6px;
+            }
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            margin-top: 2.5rem;
+
+            section {
+                flex-grow: 0.35;
+
+                h1.section-title {
+                    color: $dark;
+                    font-weight: bold;
+                }
+            }
+
+            section#form-content {
+                margin-right: 0.5rem;
+                // background-color: blue;
+
+                form {
+                    // background-color: red;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 0.8rem;
+
+                    fieldset {
+                        padding: 0.25rem 0.5rem;
+
+                        &:nth-child(1),
+                        &:nth-child(2),
+                        &:nth-child(3) {
+                            display: flex;
+                            flex-direction: column;
+                            border: 1px solid $pale-pink;
+                            border-left: 3px solid $pink;
+
+                            input {
+                                border-top: none;
+                                border-left: none;
+                                border-right: none;
+                                border-bottom: none;
+                                outline: none;
+                                font-size: 1.125rem;
+                            }
+
+                            label {
+                                cursor: text;
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            border: none;
+
+                            p {
+                                color: $pink;
+                            }
+
+                            div.radios {
+                                display: flex;
+                                justify-content: flex-start;
+
+                                div.radio-group {
+                                    &:nth-child(2) {
+                                        margin-left: 2rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:nth-child(5) {
+                            border: none;
+
+                            input {
+                                border-radius: 6px;
+                                color: #fdfdfd;
+                                cursor: pointer;
+                                background-color: $pink;
+                                border: 1px solid $pink;
+                            }
+                        }
+                    }
+                }
+            }
+
+            section#image-content {
+                margin-left: 0.5rem;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                img{
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+
+}
