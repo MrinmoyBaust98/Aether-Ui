@@ -66,6 +66,7 @@ html body main section {
 html body main section h1.section-title {
   color: rgba(0, 0, 0, 0.6);
   font-weight: bold;
+  white-space: nowrap;
 }
 
 html body main section#form-content {
@@ -107,6 +108,7 @@ html body main section#form-content form fieldset:nth-child(1) input, html body 
 
 html body main section#form-content form fieldset:nth-child(1) label, html body main section#form-content form fieldset:nth-child(2) label, html body main section#form-content form fieldset:nth-child(3) label {
   cursor: text;
+  font-style: 0.75rem;
 }
 
 html body main section#form-content form fieldset:nth-child(4) {
@@ -151,6 +153,15 @@ html body main section#form-content form fieldset:nth-child(5) input {
   border: 1px solid #f37172;
 }
 
+html body main section#form-content form a.login {
+  font-weight: bold;
+  color: #010101;
+}
+
+html body main section#form-content form a.login span {
+  color: #f37172;
+}
+
 html body main section#image-content {
   margin-left: 0.5rem;
   display: -webkit-box;
@@ -166,5 +177,77 @@ html body main section#image-content {
 
 html body main section#image-content img {
   max-width: 90%;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main section#image-content {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  html body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  html body main section h1.section-title {
+    color: #010101;
+  }
+  html body main section#form-content fieldset:nth-child(1), html body main section#form-content fieldset:nth-child(2), html body main section#form-content fieldset:nth-child(3) {
+    border: none !important;
+  }
+  html body main section#form-content fieldset label {
+    color: #f37172;
+  }
+  html body main section#form-content fieldset div.input-small-device {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 1px solid #fbcdd0;
+    border-radius: 4px;
+  }
+  html body main section#form-content fieldset div.input-small-device input {
+    -webkit-box-flex: 0.6;
+        -ms-flex-positive: 0.6;
+            flex-grow: 0.6;
+    padding: 0.75rem 1rem;
+  }
+  html body main section#form-content fieldset div.input-small-device span {
+    -webkit-box-flex: 0.4;
+        -ms-flex-positive: 0.4;
+            flex-grow: 0.4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #f37172;
+  }
+  html body main section#image-content {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
 }
 /*# sourceMappingURL=signup.css.map */

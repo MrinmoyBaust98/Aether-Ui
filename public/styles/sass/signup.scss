@@ -1,4 +1,5 @@
 $pink: #f37172;
+$pale-pink: rgba(243, 113, 114, 0.35);
 $dark: rgba(0, 0, 0, 0.6);
 $pale-pink: rgba(251, 205, 208, 1);
 
@@ -53,6 +54,7 @@ html {
                 h1.section-title {
                     color: $dark;
                     font-weight: bold;
+                    white-space: nowrap;
                 }
             }
 
@@ -88,6 +90,7 @@ html {
 
                             label {
                                 cursor: text;
+                                font-style: 0.75rem;
                             }
                         }
 
@@ -125,6 +128,13 @@ html {
                             }
                         }
                     }
+                    a.login{
+                        font-weight: bold;
+                        color: #010101;
+                        span{
+                            color: $pink;
+                        }
+                    }
                 }
             }
 
@@ -140,4 +150,63 @@ html {
         }
     }
 
+}
+@media screen and (max-width: 700px) {
+   main{
+       flex-direction: column-reverse;
+       section{
+           &#image-content{
+               justify-content: center !important;
+           }
+       }
+   } 
+}
+@media screen and(max-width: 600px) {
+    *{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    html{
+        body{
+            main{
+                flex-direction: column-reverse;
+                section{
+                    h1.section-title{
+                        color: #010101;
+                    }
+                    &#form-content{
+                        fieldset{
+                            &:nth-child(1), &:nth-child(2), &:nth-child(3){
+                                border: none !important;
+                            }
+                            label{
+                                color: $pink;
+                            }
+                            div.input-small-device{
+                                display: flex;
+                                justify-content: space-between;
+                                border: 1px solid $pale-pink;
+                                border-radius: 4px;
+                                // padding: 0.5rem 1rem;
+                                input{
+                                    flex-grow: 0.6;
+                                    padding: 0.75rem 1rem;
+                                }
+                                span{
+                                    flex-grow: 0.4;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: $pink;
+                                }
+                            }
+                        }
+                    }
+                    &#image-content{
+                        justify-content: flex-start !important;
+                    }
+                }
+            }
+        }
+    }
 }
