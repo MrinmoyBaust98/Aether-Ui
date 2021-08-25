@@ -191,6 +191,9 @@ html body main section#image-content img {
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
+  main section#image-content > img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
