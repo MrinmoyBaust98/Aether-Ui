@@ -1,0 +1,132 @@
+html {
+  height: auto;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+}
+
+body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav #nav {
+  width: 94%;
+  padding: auto auto;
+  margin-left: 2%;
+  margin-top: 1.5%;
+  margin-right: 2%;
+}
+
+nav #btn-sign-in {
+  font-family: Montserrat, sans-serif;
+  color: #252c32;
+  border-color: #dde2e4;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #fdfdfd;
+}
+
+nav #btn-sign-in:hover {
+  color: #fdfdfd;
+  background-color: #f37172;
+}
+
+nav #btn-sign-up {
+  background: #f37172;
+  border-color: #f37172;
+  font-family: Montserrat, sans-serif;
+  color: #fdfdfd;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+main {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 768px;
+  font-family: 'Inter', sans-serif;
+}
+
+main section h1.section-title {
+  color: #f37172;
+  font-weight: bold;
+}
+
+main section.terms {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+main section.terms article {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.terms article P {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+main section.terms a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: flex-end;
+  color: #fdfdfd;
+  background-color: #f37172;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+main section.terms a:hover {
+  border: 1px solid #f37172;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    padding: 0.5rem 1rem;
+  }
+  main section h1.section-title {
+    text-align: center;
+  }
+  main section.terms {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  main section.terms article p {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=terms.css.map */
