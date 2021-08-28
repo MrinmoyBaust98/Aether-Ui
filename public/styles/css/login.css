@@ -59,9 +59,12 @@ main>section {
 
 h1.section-title {
     color: var(--light-gray);
-    font-weight: bold;
+    font-weight: 400;
+    font-family: 'BalooBhai', cursive;
 }
-
+main *{
+    font-family: 'Montserrat', cursive;
+}
 main section.content {
     margin-right: 0.5rem;
 }
@@ -198,4 +201,8 @@ main section.image img {
     form fieldset:nth-child(5) {
         padding: 0;
     }
+}
+@font-face {
+    font-family: BalooBhai;
+    src: url('../../res/fonts/BalooBhai-Regular.ttf');
 }
