@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Baloo Bhai 2';
+    src: url(../font/BalooBhai-Regular.ttf) ;
+}
