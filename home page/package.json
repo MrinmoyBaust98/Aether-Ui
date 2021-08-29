@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:tailwind" : "tailwindcss build custom-css -o style.css"
+    "build:tailwind": "tailwindcss build custom-css -o style.css"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
     "autoprefixer": "^10.3.2",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "tailwind-scrollbar-hide": "^1.0.3"
   }
 }
