@@ -22462,8 +22462,10 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+
+
 .font-body {
-  font-family: Baloo Bhai 2;
+  font-family: 'Baloo Bhai 2', cursive;
 }
 
 .text-xs {
@@ -54234,7 +54236,7 @@ video {
   }
 
   .sm\:font-body {
-    font-family: Baloo Bhai 2;
+    font-family: Baloo Bhai 2, cursive;
   }
 
   .sm\:text-xs {
@@ -85641,7 +85643,7 @@ video {
   }
 
   .md\:font-body {
-    font-family: Baloo Bhai 2;
+    font-family: Baloo Bhai 2, cursive;
   }
 
   .md\:text-xs {
@@ -117048,7 +117050,7 @@ video {
   }
 
   .lg\:font-body {
-    font-family: Baloo Bhai 2;
+    font-family: Baloo Bhai 2, cursive;
   }
 
   .lg\:text-xs {
@@ -148455,7 +148457,7 @@ video {
   }
 
   .xl\:font-body {
-    font-family: Baloo Bhai 2;
+    font-family: Baloo Bhai 2, cursive;
   }
 
   .xl\:text-xs {
@@ -179862,7 +179864,7 @@ video {
   }
 
   .\32xl\:font-body {
-    font-family: Baloo Bhai 2;
+    font-family: Baloo Bhai 2, cursive;
   }
 
   .\32xl\:text-xs {
