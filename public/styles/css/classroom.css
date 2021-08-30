@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+html {
+  height: auto;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+}
+
+main {
+  min-height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.5fr 1fr;
+      grid-template-columns: 2.5fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section.class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.class article.live {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100% - 72px);
+}
+
+section.class article.controls {
+  height: 72px;
+}
+
+section.class article.controls ul {
+  padding: 0.5rem 1rem;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.class article.controls ul li:nth-child(2) {
+  margin: 0 1rem;
+}
+
+section.class article.controls ul li span {
+  font-size: 2rem;
+}
+
+section.chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fdfdfd;
+}
+
+section.chat nav {
+  max-height: 64px;
+  background-color: #f37172;
+  padding: 0.5rem 1rem 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.chat nav ul {
+  list-style-type: none;
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.chat nav ul li {
+  padding: 0.45rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  cursor: pointer;
+  color: #fdfdfd;
+}
+
+section.chat nav ul.mode-toggler-list li.active {
+  color: #010101;
+  background-color: #fdfdfd;
+}
+
+section.chat article {
+  height: calc(100% - 64px);
+}
+
+section.chat article.messages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.chat article.messages div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+section.chat article.messages div span {
+  margin-top: 1rem;
+}
+
+section.chat article.messages form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.chat article.messages form input {
+  border: 1px solid #f37172;
+  outline: none;
+  padding: 0.25rem 0.5rem;
+  width: 80%;
+}
+
+section.chat article.messages form button {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fdfdfd;
+  background-color: #f37172;
+}
+/*# sourceMappingURL=classroom.css.map */

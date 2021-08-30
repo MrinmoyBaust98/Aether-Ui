@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Class || Aether</title>
+    <!-- google fonts CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- w3-css CDN -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- local CSS -->
+    <link rel="stylesheet" href="./public/styles/css/classroom.css" />
+  </head>
+  <body>
+    <!-- don't need header element -->
+    <!-- main -->
+    <main>
+      <section class="class">
+        <article class="live w3-black w3-round-large">
+          <!-- <img src="./public/images/user-solid.svg" alt=""> -->
+          <span class="material-icons w3-jumbo w3-text-gray">
+            person
+            </span>
+        </article>
+        <article class="controls">
+          <ul class="control-list">
+            <li class="control">
+              <span class="material-icons">
+                videocam
+                </span>
+            </li>
+            <li class="control">
+              <span class="material-icons">
+                mic
+                </span>
+            </li>
+            <li class="control">
+              <span class="material-icons">
+              screen_share
+              </span></li>
+          </ul>
+        </article>
+      </section>
+      <section class="chat w3-round">
+        <nav class="w3-round">
+          <ul class="mode-toggler-list">
+            <li class="toggler active">
+              <span class="material-icons">
+                chat
+                </span>
+            </li>
+            <li class="toggler">
+              <span class="material-icons">
+                people
+                </span>
+            </li>
+          </ul>
+          <ul class="nav-links-list">
+            <li class="nav-link">
+              <span class="material-icons">
+                share
+                </span>
+            </li>
+            <li class="nav-link">
+              <span class="material-icons">
+                settings
+                </span>
+            </li>
+          </ul>
+        </nav>
+        <article class="messages w3-padding w3-round side-bar-content">
+          <div class="msg-history">
+            <!-- <span class="msg">Hello</span> -->
+          </div>
+          <form action="">
+              <input type="text" placeholder="Message" class="">
+              <button type="submit" class="w3-button">
+                <span class="material-icons">send</span>
+              </button>
+          </form>
+        </article>
+        <article class="participants w3-hide side-bar-content">
+          <h4 class="w3-center">No participants :(</h4>
+        </article>
+      </section>
+    </main>
+    <!-- scripts -->
+    <script src="./public/scripts/javascript/classroom.js"></script>
+  </body>
+</html>
