@@ -8,8 +8,8 @@ module.exports = {
           500: '#F37172',
         }
       },
-      fontFamily:{
-        body: ['Baloo Bhai 2', 'cursive']
+      font-family:{
+        'Bhai' = [ 'Baloo Bhai 2', 'cursive' ]
       },
       
     },
