@@ -58,6 +58,7 @@ section.class article.live {
       -ms-flex-align: center;
           align-items: center;
   height: calc(100% - 72px);
+  background-color: #333333;
 }
 
 section.class article.controls {
