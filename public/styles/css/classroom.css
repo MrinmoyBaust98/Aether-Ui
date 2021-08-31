@@ -242,7 +242,7 @@ section.chat article.messages form button {
     top: 0;
     right: 0;
     height: calc(100% - 72px);
-    width: 70%;
+    width: 100%;
     overflow: hidden;
     -webkit-animation: chat 0.3s ease-in forwards;
             animation: chat 0.3s ease-in forwards;
