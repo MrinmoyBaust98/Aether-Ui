@@ -1,0 +1,174 @@
+@import "./vars";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}
+html {
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+}
+body {
+  flex-grow: 1;
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+}
+main {
+  position: relative;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+section {
+  &.class {
+    display: flex;
+    flex-direction: column;
+
+    article.live {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100% - 72px);
+      background-color: #333333;
+    }
+    article.controls {
+      height: 72px;
+
+      ul {
+        padding: 0.5rem 1rem;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li:nth-child(2) {
+          margin: 0 1rem;
+        }
+        li span {
+          font-size: 2rem;
+        }
+      }
+      div.more {
+        display: none;
+        cursor: pointer;
+      }
+    }
+  }
+  &.chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fdfdfd;
+
+    nav {
+      max-height: 64px;
+      background-color: $pink;
+      padding: 0.5rem 1rem 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      ul {
+        list-style-type: none;
+        flex: 0.2;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          padding: 0.45rem;
+          border-top-left-radius: 0.25rem;
+          border-top-right-radius: 0.25rem;
+          cursor: pointer;
+          color: #fdfdfd;
+        }
+
+        &.mode-toggler-list li.active {
+          color: #010101;
+          background-color: #fdfdfd;
+        }
+      }
+    }
+    article {
+      height: calc(100% - 64px);
+    }
+    article.messages {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        span {
+          margin-top: 1rem;
+        }
+      }
+      form {
+        display: flex;
+        input {
+          border: 1px solid $pink;
+          outline: none;
+          padding: 0.25rem 0.5rem;
+          width: 80%;
+        }
+        button {
+          width: 20%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fdfdfd;
+          background-color: $pink;
+        }
+      }
+    }
+  }
+}
+// making the web responsive
+@media screen and (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    section.class {
+      // background-color: blue;
+      // flex-grow: 1;
+      article.controls {
+        padding: 0.25rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        div.more {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    section.chat{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: calc(100% - 72px);
+      width: 100%;
+      overflow: hidden;
+      animation: chat 0.3s ease-in forwards;
+    }
+    section.hide{
+      display: none;
+    }
+  }
+}
+
+// animations
+@keyframes chat {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
