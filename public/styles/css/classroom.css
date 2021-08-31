@@ -22,6 +22,7 @@ body {
 }
 
 main {
+  position: relative;
   min-height: 100%;
   display: -ms-grid;
   display: grid;
@@ -85,6 +86,11 @@ section.class article.controls ul li:nth-child(2) {
 
 section.class article.controls ul li span {
   font-size: 2rem;
+}
+
+section.class article.controls div.more {
+  display: none;
+  cursor: pointer;
 }
 
 section.chat {
@@ -202,5 +208,65 @@ section.chat article.messages form button {
           align-items: center;
   color: #fdfdfd;
   background-color: #f37172;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  main section.class article.controls {
+    padding: 0.25rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main section.class article.controls div.more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main section.chat {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: calc(100% - 72px);
+    width: 70%;
+    overflow: hidden;
+    -webkit-animation: chat 0.3s ease-in forwards;
+            animation: chat 0.3s ease-in forwards;
+  }
+  main section.hide {
+    display: none;
+  }
+}
+
+@-webkit-keyframes chat {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes chat {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=classroom.css.map */

@@ -15,6 +15,7 @@ body {
   background-color: #f0f0f0;
 }
 main {
+  position: relative;
   min-height: 100%;
   display: grid;
   grid-template-columns: 2.5fr 1fr;
@@ -24,37 +25,39 @@ main {
   align-content: center;
 }
 section {
-
   &.class {
     display: flex;
     flex-direction: column;
 
-    article.live{
+    article.live {
       display: flex;
       justify-content: center;
       align-items: center;
       height: calc(100% - 72px);
       background-color: #333333;
     }
-    article.controls{
+    article.controls {
       height: 72px;
-      
-      ul{
+
+      ul {
         padding: 0.5rem 1rem;
         list-style-type: none;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        li:nth-child(2){
+        li:nth-child(2) {
           margin: 0 1rem;
         }
-        li span{
+        li span {
           font-size: 2rem;
         }
       }
+      div.more {
+        display: none;
+        cursor: pointer;
+      }
     }
-
   }
   &.chat {
     display: flex;
@@ -71,7 +74,6 @@ section {
       align-items: center;
       ul {
         list-style-type: none;
-        // background-color: blue;
         flex: 0.2;
         display: flex;
         justify-content: space-between;
@@ -90,7 +92,7 @@ section {
         }
       }
     }
-    article{
+    article {
       height: calc(100% - 64px);
     }
     article.messages {
@@ -98,24 +100,24 @@ section {
       flex-direction: column;
       justify-content: space-between;
 
-      div{
+      div {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
 
-        span{
+        span {
           margin-top: 1rem;
         }
       }
-      form{
+      form {
         display: flex;
-        input{
+        input {
           border: 1px solid $pink;
           outline: none;
           padding: 0.25rem 0.5rem;
           width: 80%;
         }
-        button{
+        button {
           width: 20%;
           display: flex;
           justify-content: center;
@@ -125,5 +127,48 @@ section {
         }
       }
     }
+  }
+}
+// making the web responsive
+@media screen and (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    section.class {
+      // background-color: blue;
+      // flex-grow: 1;
+      article.controls {
+        padding: 0.25rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        div.more {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    section.chat{
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: calc(100% - 72px);
+      width: 70%;
+      overflow: hidden;
+      animation: chat 0.3s ease-in forwards;
+    }
+    section.hide{
+      display: none;
+    }
+  }
+}
+
+// animations
+@keyframes chat {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
   }
 }
