@@ -1,0 +1,29 @@
+{
+  "name": "aether-website-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tailwind": "tailwindcss build custom-css -o style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tawfiqealahi/aether-website-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tawfiqealahi/aether-website-ui/issues"
+  },
+  "homepage": "https://github.com/tawfiqealahi/aether-website-ui#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.2",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "tailwind-scrollbar-hide": "^1.0.3"
+  }
+}

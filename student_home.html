@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - aether</title>
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" sizes="180x180" href="public/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="public/images/favicon-16x16.png" />
+    <link rel="manifest" href="public/images/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="public/styles/css/student_dashboard.css">
+</head>
+
+<body>
+    <!-- main part -->
+    <main class="font-sans">
+        <div class="flex gap-4">
+            <div class="w-2/12  border-r-2">
+                <div class=" relative max-h-screen">
+                    <!-- side bar -->
+                    <div class="max-h-screen w-56">
+                        <!-- logo -->
+                        <a class=" " href="#"><img class="py-10 pl-4" src="public/images/logo.svg" alt=""></a>
+                        <!-- nav -->
+                        <nav class=" space-y-32">
+                            <!-- nav items -->
+                            <div class="block">
+                                <a href=""
+                                    class="flex py-2 5 text-gray-700 px-4 hover:bg-red-500 rounded w-3/4 hover:text-gray-200"><svg
+                                        class="w-10 h-8 pr-2 text-gray-400  " fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                                        </path>
+                                    </svg>
+                                    <p class="my-auto">Home</p>
+                                </a>
+
+                                <a href=""
+                                    class="flex py-2 5 px-4 hover:bg-red-500  rounded w-3/4 hover:text-gray-200 "><svg
+                                        class="w-10 h-8 pr-2 text-gray-400  " fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p class="my-auto">Classroom</p>
+                                </a>
+
+
+                                <a href=""
+                                    class="flex py-2 5 px-4 hover:bg-red-500  rounded w-3/4 hover:text-gray-200"><svg
+                                        class="w-10 h-8 pr-2 text-gray-400  " fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z">
+                                        </path>
+                                        <path fill-rule="evenodd"
+                                            d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p class="my-auto">My Courses</p>
+                                </a>
+
+
+                                <a href=""
+                                    class="flex py-2 5 px-4 hover:bg-red-500  rounded w-3/4 hover:text-gray-200"><svg
+                                        class="w-10 h-8 pr-2 text-gray-400  " fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z"></path>
+                                        <path
+                                            d="M6 3a2 2 0 00-2 2v11a2 2 0 002 2h8a2 2 0 002-2V5a2 2 0 00-2-2 3 3 0 01-3 3H9a3 3 0 01-3-3z">
+                                        </path>
+                                    </svg>
+                                    <p class="my-auto">Test</p>
+                                </a>
+
+
+                                <a href="" class="flex py-2 5 px-4 hover:bg-red-500  rounded w-3/4 hover:text-gray-200">
+                                    <svg class="w-10 h-8 pr-2 text-gray-400  " fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+                                        <path fill-rule="evenodd"
+                                            d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p class="my-auto">Test Result</p>
+                                </a>
+
+
+                                <a href="" class="flex py-2 5 px-4 hover:bg-red-500  rounded w-3/4 hover:text-gray-200">
+                                    <svg class="w-10 h-8 pr-2 text-gray-400  " fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z">
+                                        </path>
+                                    </svg>
+                                    <p class="my-auto">Standings</p>
+                                </a>
+
+
+                                <a href="" class="flex py-2 5 px-4 hover:bg-red-500 rounded w-3/4 hover:text-gray-200">
+                                    <svg class="w-10 h-8 pr-2 text-gray-400" fill="currentColor" viewBox="0 0 20 20"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p class="my-auto">Settings</p>
+                                </a>
+                            </div>
+                            <!-- logout -->
+                            <div><a class="block  text-gray-700 px-8 hover:text-red-500 " href="#">Logout</a></div>
+                        </nav>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--------- hero part ------------->
+            <div class="w-6/12 overflow-y-auto h-screen  ">
+                <!------------ Hello Harry part ------------------>
+                <div class="flex max-h-screen    h-36 mt-10 relative bg-gray-200 mx-3 content-center rounded-md ">
+                    <div class="my-auto ml-8">
+                        <h3 class="text-3xl font-bold">Hello Harry!</h3>
+                        <p>It"s good to see you again.</p>
+                    </div>
+                    <div class="ml-auto absolute bottom-0 right-4 ">
+                        <img class="h-40 " src="public/images/harry.svg" alt="img">
+                    </div>
+                </div>
+                <!----------- Bioorganic Chemistry part -------------->
+                <div class="flex mt-5 mx-3">
+                    <div class="flex   bg-gray-200 w-3/4 rounded-md ">
+                        <div class="pr-3 h-20 "><img class=" p-3 rounded-md m-3  bg-gray-50  "
+                                src="public/images/books.svg" alt="img"></div>
+                        <div class="my-auto">
+
+                            <h3 class=" font-bold  pr-4">Bioorganic Chemistry |</h3>
+                            <p>by Walter White</p>
+                        </div>
+
+                        <div class="my-auto ml-auto mr-2">
+                            <button
+                                class="bg-black  py-2 px-6 text-yellow-50 hover:bg-gray-700 h-10 text-center rounded-md"><a
+                                    href="#">Continue</a></button>
+                        </div>
+                    </div>
+                    <a class="my-auto" href="#"><svg class="w-10  h-10 mx-4" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"></path>
+                        </svg></a>
+                    <a class="my-auto" href="#"><svg class="w-10 h-10 my-auto mx-2" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg></a>
+                </div>
+                <!----------ongoing and archived  course part ----------------------->
+                <h4 class="font-bold text-xl pt-10">Courses</h4>
+                <div class="flex pt-4">
+                    <button class=" mr-8 gap-8 font-semibold">
+                        ongoing
+                    </button>
+                    <button class=" ">
+                        archived
+                    </button>
+                </div>
+                <!----------- course sections ------------------->
+                <div class="flex mt-5 mx-3">
+                    <div class="flex w-full bg-gray-200  rounded-md ">
+                        <div class="flex">
+                            <div class="pr-3 h-20 ">
+                                <img class="p-3 rounded-md m-3  bg-gray-50" src="public/images/books.svg"
+                                    alt="img">
+                            </div>
+                            <div class="my-auto">
+                                <h3 class="text- font-bold pr-4">Software Engineering |</h3>
+                                <p>by Walter White</p>
+                            </div>
+                        </div>
+                        <div class="flex ml-auto ">
+                            <div class="pr-5 flex my-auto">
+                                <svg class="w-8 h-8 " fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="pl-2 my-auto">02:40 PM</span>
+                            </div>
+                            <div class="my-auto">
+                                <button
+                                    class=" mr-3  py-2 px-6 bg-red-500 hover:bg-red-700 text-yellow-100 h-10 text-center  rounded-md"><a
+                                        href="#">View Course</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-5 mx-3">
+                    <div class="flex w-full bg-gray-200  rounded-md ">
+                        <div class="flex">
+                            <div class="pr-3 h-20 ">
+                                <img class="p-3 rounded-md m-3  bg-gray-50" src="public/images/books.svg"
+                                    alt="img">
+                            </div>
+                            <div class="my-auto">
+                                <h3 class="text- font-bold pr-4">Software Engineering |</h3>
+                                <p>by Walter White</p>
+                            </div>
+                        </div>
+                        <div class="flex ml-auto ">
+                            <div class="pr-5 flex my-auto">
+                                <svg class="w-8 h-8 " fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="pl-2 my-auto">02:40 PM</span>
+                            </div>
+                            <div class="my-auto">
+                                <button
+                                    class="  mr-3  py-2 px-6 bg-red-500 hover:bg-red-700 text-yellow-100 h-10 text-center rounded-md"><a
+                                        href="#">View Course</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-5 mx-3">
+                    <div class="flex w-full bg-gray-200  rounded-md ">
+                        <div class="flex">
+                            <div class="pr-3 h-20 ">
+                                <img class="p-3 rounded-md m-3  bg-gray-50" src="public/images/pencil.svg" alt="img">
+                            </div>
+                            <div class="my-auto">
+                                <h3 class="text- font-bold pr-4">Engineering Drawing |</h3>
+                                <p>by Walter White</p>
+                            </div>
+                        </div>
+                        <div class="flex ml-auto ">
+                            <div class="pr-5 flex my-auto">
+                                <svg class="w-8 h-8 " fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="pl-2 my-auto">02:40 PM</span>
+                            </div>
+                            <div class="my-auto">
+                                <button
+                                    class=" mr-3  py-2 px-6 bg-red-500 hover:bg-red-700 text-yellow-100 h-10 text-center rounded-md"><a
+                                        href="#">View Course</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-5 mx-3">
+                    <div class="flex w-full bg-gray-200  rounded-md ">
+                        <div class="flex">
+                            <div class="pr-3 h-20 ">
+                                <img class="p-3 rounded-md m-3  bg-gray-50" src="public/images/books.svg"
+                                    alt="img">
+                            </div>
+                            <div class="my-auto">
+                                <h3 class="text- font-bold pr-4">Bioorganic Chemistry |</h3>
+                                <p>by Walter White</p>
+                            </div>
+                        </div>
+                        <div class="flex ml-auto ">
+                            <div class="pr-5 flex my-auto">
+                                <svg class="w-8 h-8 " fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="pl-2 my-auto">02:40 PM</span>
+                            </div>
+                            <div class="my-auto">
+                                <button
+                                    class=" mr-3  py-2 px-6 bg-red-500 hover:bg-red-700 text-yellow-100 h-10 text-center rounded-md"><a
+                                        href="#">View Course</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-5 mx-3">
+                    <div class="flex w-full bg-gray-200  rounded-md ">
+                        <div class="flex">
+                            <div class="pr-3 h-20 ">
+                                <img class="p-3 rounded-md m-3  bg-gray-50" src="public/images/books.svg"
+                                    alt="img">
+                            </div>
+                            <div class="my-auto">
+                                <h3 class="text- font-bold pr-4">Software Engineering |</h3>
+                                <p>by Walter White</p>
+                            </div>
+                        </div>
+                        <div class="flex ml-auto ">
+                            <div class="pr-5 flex my-auto">
+                                <svg class="w-8 h-8 " fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="pl-2 my-auto">02:40 PM</span>
+                            </div>
+                            <div class="my-auto">
+                                <button
+                                    class=" mr-3  py-2 px-6 bg-red-500 hover:bg-red-700 text-yellow-100 h-10 text-center rounded-md"><a
+                                        href="#">View Course</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex mt-5 mx-3">
+                    <div class="flex w-full bg-gray-200  rounded-md ">
+                        <div class="flex">
+                            <div class="pr-3 h-20 ">
+                                <img class="p-3 rounded-md m-3  bg-gray-50" src="public/images/books.svg"
+                                    alt="img">
+                            </div>
+                            <div class="my-auto">
+                                <h3 class="text- font-bold pr-4">Software Engineering |</h3>
+                                <p>by Walter White</p>
+                            </div>
+                        </div>
+                        <div class="flex ml-auto ">
+                            <div class="pr-5 flex my-auto">
+                                <svg class="w-8 h-8 " fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="pl-2 my-auto">02:40 PM</span>
+                            </div>
+                            <div class="my-auto">
+                                <button
+                                    class="mr-3  py-2 px-6 bg-red-500 hover:bg-red-700 text-yellow-100 h-10 text-center rounded-md"><a
+                                        href="#">View Course</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-------------- right section  ------------------------------>
+            <div class="w-4/12 max-h-screen  pt-8 gap-3">
+                <div class=" w-96 flex relative ">
+                    <!--top  search input part -->
+                    <svg class="w-6 h-6 absolute m-2 " fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <input class="w-64 bg-gray-300 rounded-md" type="text">
+                    <!-- notification top -->
+                    <svg class="w-10 h-10 mx-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9">
+                        </path>
+                    </svg>
+                    <!-- right top img -->
+                    <img class="rounded-lg " src="public/images/avatar.png" alt="img">
+                    <!-- right side down arrow -->
+                    <svg class="w-4 h-4 my-auto ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
